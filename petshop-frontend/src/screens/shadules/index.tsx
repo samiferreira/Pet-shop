@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import api from '../../services/Api';
-import './index.css'; // Importa o arquivo CSS
+import './index.css'; 
 
 export const Agendamentos = () => {
   const [servico, setServico] = useState('');
   const [data, setData] = useState('');
   const [quantidadeCachorrosGrandes, setQuantidadeCachorrosGrandes] = useState('');
   const [quantidadeCachorrosPequenos, setQuantidadeCachorrosPequenos] = useState('');
-  const [petshop, setPetshop] = useState<PetshopData | null>(null)
+  const [petshop, setPetshop] = useState<PetshopData | null>(null);
   
   interface PetshopData {
     name: string;
@@ -33,8 +33,11 @@ export const Agendamentos = () => {
     e.preventDefault();
 
     try {
+      const [ano, mes, dia] = data.split('-');
+      const formattedDate = `${dia}/${mes}/${ano}`;
+
       const params = {
-        date: data,
+        date: formattedDate,
         small_dogs: quantidadeCachorrosPequenos,
         big_dogs: quantidadeCachorrosGrandes
       };
@@ -56,18 +59,18 @@ export const Agendamentos = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="servico">Serviço:</label>
-            <select  className='service_pet'  id="servico" value={servico} onChange={(e) => setServico(e.target.value)}>
+            <select className='service_pet' id="servico" value={servico} onChange={(e) => setServico(e.target.value)}>
               <option value="">Selecione o serviço</option>
               <option value="Banho e Tosa">Banho e Tosa</option>
             </select>
           </div>
           <div className="form-group">
             <label htmlFor="data">Data:</label>
-            <input  className='input' type="date" id="data" value={data} onChange={(e) => setData(e.target.value)} />
+            <input className='input' type="date" id="data" value={data} onChange={(e) => setData(e.target.value)} />
           </div>
           <div className="form-group">
             <label htmlFor="quantidadeCachorrosGrandes">Quantidade de Cachorros Grandes:</label>
-            <select  className='input' id="quantidadeCachorrosGrandes" value={quantidadeCachorrosGrandes} onChange={(e) => setQuantidadeCachorrosGrandes(e.target.value)}>
+            <select className='input' id="quantidadeCachorrosGrandes" value={quantidadeCachorrosGrandes} onChange={(e) => setQuantidadeCachorrosGrandes(e.target.value)}>
               <option value="">Selecione a quantidade</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -78,7 +81,7 @@ export const Agendamentos = () => {
           </div>
           <div className="form-group">
             <label htmlFor="quantidadeCachorrosPequenos">Quantidade de Cachorros Pequenos:</label>
-            <select className='input'  id="quantidadeCachorrosPequenos" value={quantidadeCachorrosPequenos} onChange={(e) => setQuantidadeCachorrosPequenos(e.target.value)}>
+            <select className='input' id="quantidadeCachorrosPequenos" value={quantidadeCachorrosPequenos} onChange={(e) => setQuantidadeCachorrosPequenos(e.target.value)}>
               <option value="">Selecione a quantidade</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -87,7 +90,7 @@ export const Agendamentos = () => {
               <option value="5">5</option>
             </select>
           </div>
-          <button  className='button_submit' type="submit">Buscar</button>
+          <button className='button_submit' type="submit">Buscar</button>
         </form>
         {petshop && (
           <div className="petshop-details">
