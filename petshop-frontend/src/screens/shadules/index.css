@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+}
+
+.form-container {
+  width: 400px;
+  padding: 13px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.petshop-details {
+  margin: 30px;
+}
+
+.titlePet {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.bestPet {
+  color: #f4b115;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 7px;
+
+}
+
+.input {
+
+  border-radius: 7px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 14px;
+ 
+  padding: 3px;
+  cursor: pointer;
+}
+
+.button_submit {
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 0;
+  background-color: #2b58de;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.service_pet {
+  border-radius: 7px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 5px;
+  padding: 4px;
+}

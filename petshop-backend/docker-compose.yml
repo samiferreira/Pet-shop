@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: bitnami/postgresql
+    ports: 
+      - "5432:${DB_PORT}"
+    environment:
+      - POSTGRESQL_USERNAME=${DB_USERNAME}
+      - POSTGRESQL_PASSWORD=${DB_PASSWORD}
+      - POSTGRESQL_DATABASE=${DB_DATABASE}
+      

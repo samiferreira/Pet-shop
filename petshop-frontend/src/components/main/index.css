@@ -1,0 +1,57 @@
+/* Main */
+.description {
+    position: relative;
+    z-index: 1;
+    padding: 20px 20px;
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 30%; 
+    max-width: 800px; 
+    top: 200px;
+    padding-left: 40px;
+}
+
+
+.dog {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    z-index: -1; 
+    object-fit: cover;
+    object-position: center;
+}
+.person {
+    color: #f4b115;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #222;
+    text-align: start;
+}
+
+.paragraph {
+    color: rgb(53, 44, 44);
+    margin-top: 20px;
+}
+
+.schedule_button {
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 14px;
+    border: 0;
+    background-color: #2b58de;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.schedule_button:hover {
+    background-color: #214cce;
+}
