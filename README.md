@@ -4,6 +4,7 @@ na data de agendamento e na quantidade de cachorros. O sistema consulta uma list
 **TECNOLOGIAS UTILIZADAS**
 
 **Frontend:**
+
 React.js
 
 HTML
@@ -11,6 +12,8 @@ HTML
 CSS
 
 Axios
+
+Typescript
 
 **Backend:**
 
