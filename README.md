@@ -57,6 +57,7 @@ Instale o Vite, caso nao tenha, executando npm install vite.
 Execute npm run dev para iniciar o frontend.
 
 **USO**
+
 Pressione o botão "Agenda serviços" ou no botão "Agendar" no menu, para agendar os serviços e ser redirecionado para escolher o melhor e mais barato pet shop,
 de acordo com as opçoes selecionadas.Se caso o usuário desejar voltar à tela principal, pode clicar no botão "Home".
 
