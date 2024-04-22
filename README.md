@@ -52,7 +52,7 @@ Após o contêiner estar ativo, execute npm run dev para iniciar o banco de dado
 
 **CONFIGURAÇÃO FRONTEND**
 
-Instale o Vite executando npm install vite.
+Instale o Vite, caso nao tenha, executando npm install vite.
 
 Execute npm run dev para iniciar o frontend.
 
