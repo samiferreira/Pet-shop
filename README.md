@@ -64,4 +64,4 @@ de acordo com as opçoes selecionadas.Se caso o usuário desejar voltar à tela 
 
 **Obs**
 
-Os componentes serviçoes e sobre sao componentes sem conteudo, sao componentes "fakes", serao implementados os conteudos futuramente.
+Os componentes serviçoes e sobre sao componentes sem conteudo, sao componentes "fakes", sera implementado os conteudos futuramente.
