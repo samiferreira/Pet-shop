@@ -43,7 +43,7 @@ PostgreSQL instalado e em execução.
 
 **CONFIGURAÇAO DO BACKEND**
 
-É necessario a instalçao do docker caso nao tenha
+É necessario que seja realizada a instalçao do docker, caso nao tenha.
 
 Inicie o contêiner Docker com o comando docker-compose up --build.
 
